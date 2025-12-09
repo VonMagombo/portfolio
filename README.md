@@ -2,10 +2,6 @@
 
 A personal portfolio project showcasing projects, skills, and contact information.
 
-## Demo
-
-Include a screenshot or link to a live demo here.
-
 ## About
 
 This repository contains my personal portfolio website built to present my projects, experience, and contact details. It's structured to be easy to update and deploy.
@@ -78,6 +74,6 @@ Specify a license (e.g., MIT). Add a LICENSE file to the repository.
 
 ## Contact
 
-Your Name - your.email@example.com
+Your Name - mvmagombo@gmail.com
 
 Project link: https://github.com/VonMagombo/portfolio
