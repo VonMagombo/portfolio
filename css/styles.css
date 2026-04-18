@@ -1,0 +1,46 @@
+:root {
+  --glass-bg: rgba(255,255,255,0.85);
+  --glass-border: rgba(0,0,0,0.07);
+}
+html.dark {
+  --glass-bg: rgba(10,20,18,0.85);
+  --glass-border: rgba(45,212,191,0.12);
+}
+body { transition: background-color 0.4s ease, color 0.4s ease; }
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+}
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb { background: #14b8a6; border-radius: 0; }
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(20,184,166,0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(20,184,166,0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+.cert-card:hover { transform: translateY(-4px); }
+.cert-card { transition: transform 0.3s ease, border-color 0.3s ease; }
+.skill-bar-fill { transition: width 1.2s cubic-bezier(0.22,1,0.36,1); }
+.nav-link::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: #14b8a6;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+.nav-link:hover::after { transform: scaleX(1); }
+@keyframes glitch {
+  0%, 100% { clip-path: inset(0 0 98% 0); transform: translate(-2px, 0); }
+  20% { clip-path: inset(40% 0 40% 0); transform: translate(2px, 0); }
+  40% { clip-path: inset(80% 0 5% 0); transform: translate(-1px, 0); }
+  60% { clip-path: inset(10% 0 70% 0); transform: translate(1px, 0); }
+  80% { clip-path: inset(60% 0 20% 0); transform: translate(-2px, 0); }
+}
+.animate-fade-in-up { opacity: 0; }
+.initiated .animate-fade-in-up { animation: fadeInUp 0.7s ease-out forwards; }
