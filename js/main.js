@@ -11,13 +11,23 @@ themeToggle.addEventListener('click', () => {
 });
 
 // Mobile menu toggle
-document.getElementById('mobileMenuBtn').addEventListener('click', () => {
-  document.getElementById('mobileMenu').classList.toggle('hidden');
-});
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+if (mobileMenuBtn && mobileMenu) {
+  mobileMenuBtn.addEventListener('click', () => {
+    const isHidden = mobileMenu.classList.toggle('hidden');
+    mobileMenuBtn.setAttribute('aria-expanded', (!isHidden).toString());
+  });
+}
 
 // Close mobile menu on link click
 document.querySelectorAll('#mobileMenu a').forEach(a => {
-  a.addEventListener('click', () => document.getElementById('mobileMenu').classList.add('hidden'));
+  a.addEventListener('click', () => {
+    if (mobileMenu) {
+      mobileMenu.classList.add('hidden');
+      if (mobileMenuBtn) mobileMenuBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
 });
 
 // Skill bars — animate when scrolled into view
@@ -43,10 +53,13 @@ const sections = document.querySelectorAll('section[id]');
 window.addEventListener('scroll', () => {
   let current = '';
   sections.forEach(s => {
-    if (window.scrollY >= s.offsetTop - 100) current = s.id;
+    if (window.scrollY >= s.offsetTop - 120) current = s.id;
   });
   document.querySelectorAll('.nav-link').forEach(link => {
-    link.classList.toggle('text-cyber-600', link.getAttribute('href') === '#' + current);
-    link.classList.toggle('dark:text-cyber-400', link.getAttribute('href') === '#' + current);
+    const isActive = link.getAttribute('href') === '#' + current;
+    link.classList.toggle('text-cyber-600', isActive);
+    link.classList.toggle('dark:text-cyber-400', isActive);
+    link.classList.toggle('text-slate-600', !isActive);
+    link.classList.toggle('dark:text-slate-400', !isActive);
   });
 });

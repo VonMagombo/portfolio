@@ -42,5 +42,8 @@ body { transition: background-color 0.4s ease, color 0.4s ease; }
   60% { clip-path: inset(10% 0 70% 0); transform: translate(1px, 0); }
   80% { clip-path: inset(60% 0 20% 0); transform: translate(-2px, 0); }
 }
+.project-card { transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; }
+.project-card:hover { transform: translateY(-4px); }
 .animate-fade-in-up { opacity: 0; }
+.initiated.animate-fade-in-up,
 .initiated .animate-fade-in-up { animation: fadeInUp 0.7s ease-out forwards; }

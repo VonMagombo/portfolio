@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Matthew Vonroy Magombo | SOC Analyst</title>
   <meta name="description" content="Aspiring Cybersecurity SOC Analyst — Matthew Vonroy Magombo. BSc Computer Systems Engineering, Google Cybersecurity Certified, ALX Cybersecurity." />
+  <meta name="keywords" content="SOC Analyst, Cybersecurity, Threat Detection, Incident Response, SIEM, Splunk, Linux, Python, Matthew Magombo" />
+  <meta name="author" content="Matthew Vonroy Magombo" />
+  <meta name="theme-color" content="#060d0c" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Matthew Vonroy Magombo | SOC Analyst" />
+  <meta property="og:description" content="Cybersecurity SOC Analyst specializing in threat detection, SIEM log analysis, and incident response." />
+  <meta property="og:image" content="assets/matthew-profile.jpg" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Matthew Vonroy Magombo | SOC Analyst" />
+  <meta name="twitter:description" content="Cybersecurity SOC Analyst specializing in threat detection, SIEM log analysis, and incident response." />
+  <meta name="twitter:image" content="assets/matthew-profile.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -72,19 +86,23 @@
       <a href="#home" class="font-mono text-sm font-bold text-cyber-600 dark:text-cyber-400 tracking-widest uppercase">
         MVM<span class="animate-blink">_</span>
       </a>
-      <div class="hidden md:flex items-center gap-8">
+      <div class="hidden md:flex items-center gap-7">
         <a href="#about" class="nav-link text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400 hover:text-cyber-600 dark:hover:text-cyber-400 transition-colors">About</a>
+        <a href="#projects" class="nav-link text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400 hover:text-cyber-600 dark:hover:text-cyber-400 transition-colors">Projects</a>
         <a href="#skills" class="nav-link text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400 hover:text-cyber-600 dark:hover:text-cyber-400 transition-colors">Skills</a>
         <a href="#certifications" class="nav-link text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400 hover:text-cyber-600 dark:hover:text-cyber-400 transition-colors">Certifications</a>
         <a href="#education" class="nav-link text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400 hover:text-cyber-600 dark:hover:text-cyber-400 transition-colors">Education</a>
         <a href="#contact" class="nav-link text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400 hover:text-cyber-600 dark:hover:text-cyber-400 transition-colors">Contact</a>
       </div>
       <div class="flex items-center gap-3">
+        <a href="#contact" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 border border-cyber-500/40 text-cyber-600 dark:text-cyber-400 font-mono text-xs font-bold uppercase tracking-wider hover:bg-cyber-50 dark:hover:bg-cyber-900/30 transition-colors">
+          <span>Get In Touch</span>
+        </a>
         <button id="themeToggle" class="w-9 h-9 border border-slate-200 dark:border-cyber-500/30 flex items-center justify-center text-slate-500 dark:text-cyber-400 hover:bg-cyber-50 dark:hover:bg-cyber-900/30 transition-colors" aria-label="Toggle theme">
           <svg id="sunIcon" class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           <svg id="moonIcon" class="w-4 h-4 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
         </button>
-        <button id="mobileMenuBtn" class="md:hidden w-9 h-9 border border-slate-200 dark:border-cyber-500/30 flex items-center justify-center" aria-label="Menu">
+        <button id="mobileMenuBtn" class="md:hidden w-9 h-9 border border-slate-200 dark:border-cyber-500/30 flex items-center justify-center text-slate-700 dark:text-slate-300" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
       </div>
@@ -92,6 +110,7 @@
     <!-- Mobile menu -->
     <div id="mobileMenu" class="hidden md:hidden border-t border-slate-100 dark:border-cyber-500/10 px-6 py-4 flex flex-col gap-4">
       <a href="#about" class="text-sm font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300">About</a>
+      <a href="#projects" class="text-sm font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300">Projects</a>
       <a href="#skills" class="text-sm font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300">Skills</a>
       <a href="#certifications" class="text-sm font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300">Certifications</a>
       <a href="#education" class="text-sm font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300">Education</a>
@@ -134,13 +153,21 @@
             <span class="font-mono text-xs px-3 py-1.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">GitHub Copilot</span>
           </div>
 
-          <div class="flex flex-col sm:flex-row gap-3 animate-fade-in-up" style="animation-delay:0.55s">
-            <a href="#certifications" class="inline-flex items-center justify-center gap-2 px-7 py-3 bg-cyber-600 dark:bg-cyber-500 text-white font-bold uppercase tracking-widest text-xs hover:bg-cyber-700 dark:hover:bg-cyber-400 transition-colors">
-              View Certifications
+          <div class="flex flex-wrap gap-3 animate-fade-in-up" style="animation-delay:0.55s">
+            <a href="#projects" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-cyber-600 dark:bg-cyber-500 text-white font-bold uppercase tracking-widest text-xs hover:bg-cyber-700 dark:hover:bg-cyber-400 transition-colors">
+              Explore Projects
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
-            <a href="#contact" class="inline-flex items-center justify-center gap-2 px-7 py-3 border border-slate-300 dark:border-cyber-500/40 text-slate-700 dark:text-cyber-400 font-bold uppercase tracking-widest text-xs hover:bg-slate-50 dark:hover:bg-cyber-900/20 transition-colors">
+            <a href="#contact" class="inline-flex items-center justify-center gap-2 px-6 py-3 border border-cyber-500/40 text-cyber-700 dark:text-cyber-400 font-bold uppercase tracking-widest text-xs hover:bg-cyber-50 dark:hover:bg-cyber-900/20 transition-colors">
               Get In Touch
+            </a>
+            <a href="https://github.com/VonMagombo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-3 border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-300 font-bold uppercase tracking-widest text-xs hover:bg-slate-100 dark:hover:bg-white/5 transition-colors" title="GitHub Profile">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/matthew-magombo-21a7141ab/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-3 border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-300 font-bold uppercase tracking-widest text-xs hover:bg-slate-100 dark:hover:bg-white/5 transition-colors" title="LinkedIn Profile">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
             </a>
           </div>
         </div>
@@ -151,9 +178,12 @@
             <div class="absolute -top-3 -right-3 w-full h-full border border-cyber-500/40 dark:border-cyber-400/30 pointer-events-none"></div>
             <div class="absolute -bottom-3 -left-3 w-full h-full border border-slate-300 dark:border-white/10 pointer-events-none"></div>
             <img
-              src="assets/IMG-20250515-WA0036.jpg"
-              alt="Matthew Vonroy Magombo"
-              class="relative w-72 h-80 object-cover object-top grayscale-[20%] hover:grayscale-0 transition-all duration-500"
+              src="assets/matthew-profile.jpg"
+              alt="Matthew Vonroy Magombo - SOC Analyst"
+              width="288"
+              height="320"
+              loading="eager"
+              class="relative w-72 h-80 object-cover object-top grayscale-[15%] hover:grayscale-0 transition-all duration-500"
               onerror="this.style.display='none'; this.parentElement.querySelector('.photo-fallback').style.display='flex';"
             />
             <div class="photo-fallback hidden w-72 h-80 bg-slate-100 dark:bg-slate-800 items-center justify-center border border-slate-200 dark:border-slate-700">
@@ -164,7 +194,7 @@
             </div>
             <div class="absolute bottom-4 left-4 right-4 glass border border-cyber-500/30 dark:border-cyber-400/20 px-3 py-2">
               <p class="font-mono text-[11px] text-cyber-600 dark:text-cyber-400">
-                <span class="opacity-50">$</span> status: <span class="text-emerald-500">ACTIVE</span> | role: SOC_ANALYST_ASPIRANT
+                <span class="opacity-50">$</span> status: <span class="text-emerald-500">ACTIVE</span> | role: SOC_ANALYST | ops: OPEN_TO_REMOTE
               </p>
             </div>
           </div>
@@ -214,15 +244,182 @@
           </div>
           <div class="p-6 border border-slate-200 dark:border-white/10 bg-slate-50/50 dark:bg-white/[0.02] hover:border-cyber-400/40 transition-colors">
             <p class="font-mono font-bold text-3xl text-cyber-600 dark:text-cyber-400 mb-1">ZWE</p>
-            <p class="font-bold text-sm text-slate-800 dark:text-white mb-0.5">Location</p>
-            <p class="text-xs text-slate-500 dark:text-slate-500">Harare, Zimbabwe</p>
+            <p class="font-bold text-sm text-slate-800 dark:text-white mb-0.5">Harare, Zimbabwe</p>
+            <p class="text-xs text-slate-500 dark:text-slate-500">CAT (GMT+2) · Open to Remote &amp; Relocation</p>
           </div>
           <div class="col-span-2 p-5 border border-cyber-500/30 dark:border-cyber-400/20 bg-cyber-50/50 dark:bg-cyber-900/10">
             <p class="font-mono text-xs text-cyber-600 dark:text-cyber-400 mb-2 uppercase tracking-wider">// Target Role</p>
             <p class="font-bold text-slate-800 dark:text-white">SOC Analyst (Tier 1 / Tier 2)</p>
-            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Threat Detection · Incident Response · Log Analysis · SIEM</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Threat Detection · Incident Response · Log Analysis · SIEM Automation</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-28 relative overflow-hidden bg-slate-50/60 dark:bg-[#081110] border-t border-b border-slate-100 dark:border-white/5">
+    <div class="absolute inset-0 grid-bg opacity-30 dark:opacity-50"></div>
+    <div class="relative max-w-6xl mx-auto px-6">
+      <div class="mb-16">
+        <p class="font-mono text-xs text-cyber-600 dark:text-cyber-400 tracking-widest uppercase mb-3">// Hands-On Security Operations</p>
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div>
+            <h2 class="font-display font-bold text-4xl md:text-5xl tracking-tighter">Featured Projects &amp; Labs</h2>
+            <div class="h-[2px] w-16 bg-cyber-500 mt-4"></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400 max-w-md">
+            Production-style threat detection pipelines, SIEM automation tools, and adversarial investigation labs mapped to industry frameworks.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+
+        <!-- Project 1: Failed Login Detector (Flagship) -->
+        <div class="project-card flex flex-col justify-between p-7 bg-white dark:bg-white/[0.02] border border-cyber-500/40 dark:border-cyber-500/30 hover:border-cyber-500 shadow-sm relative">
+          <div class="absolute -top-3 right-5 px-2.5 py-0.5 bg-cyber-600 text-white font-mono text-[10px] uppercase tracking-widest font-bold">
+            Flagship Build
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span class="font-mono text-xs text-cyber-600 dark:text-cyber-400 uppercase tracking-wider font-semibold">SIEM Automation · Threat Detection</span>
+            </div>
+            <h3 class="font-display font-bold text-xl text-slate-800 dark:text-white mb-3">Failed Login Detector &amp; Threat Alerter</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-5">
+              Simulates an end-to-end SIEM workflow: parses raw Linux SSH authentication logs with regex, stores events in SQLite, detects brute-force attacks and credential-stuffing patterns, assigns severity tiers (LOW to CRITICAL), and auto-generates actionable incident reports with firewall remediation commands.
+            </p>
+
+            <!-- Architecture pipeline -->
+            <div class="p-3 mb-5 bg-slate-50 dark:bg-black/40 border border-slate-200 dark:border-white/10 font-mono text-[11px] text-slate-700 dark:text-slate-300">
+              <span class="text-cyber-600 dark:text-cyber-400">// Pipeline:</span> auth.log → parser.py → SQLite DB → analyzer.py → reporter.py
+            </div>
+
+            <ul class="space-y-2 mb-6 text-xs text-slate-600 dark:text-slate-400">
+              <li class="flex items-start gap-2">
+                <span class="text-cyber-500 font-bold">✓</span>
+                <span>Regex parsing of timestamp, IP, username, and authentication outcome</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-cyber-500 font-bold">✓</span>
+                <span>Configurable threat thresholds for brute-force &amp; credential-stuffing</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-cyber-500 font-bold">✓</span>
+                <span>Automated firewall / iptables blocking recommendation generation</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap gap-1.5 mb-6">
+              <span class="font-mono text-[11px] px-2 py-0.5 bg-cyber-50 dark:bg-cyber-950 border border-cyber-200 dark:border-cyber-800 text-cyber-700 dark:text-cyber-300">Python 3</span>
+              <span class="font-mono text-[11px] px-2 py-0.5 bg-cyber-50 dark:bg-cyber-950 border border-cyber-200 dark:border-cyber-800 text-cyber-700 dark:text-cyber-300">SQLite3</span>
+              <span class="font-mono text-[11px] px-2 py-0.5 bg-cyber-50 dark:bg-cyber-950 border border-cyber-200 dark:border-cyber-800 text-cyber-700 dark:text-cyber-300">Regex</span>
+              <span class="font-mono text-[11px] px-2 py-0.5 bg-cyber-50 dark:bg-cyber-950 border border-cyber-200 dark:border-cyber-800 text-cyber-700 dark:text-cyber-300">Linux auth.log</span>
+            </div>
+            <a href="https://github.com/VonMagombo/failed-login-detector" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full px-4 py-2.5 bg-cyber-600 text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-cyber-700 transition-colors">
+              <span>View Source on GitHub</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: SOC Detection Lab -->
+        <div class="project-card flex flex-col justify-between p-7 bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 hover:border-cyber-400/50 shadow-sm">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <span class="w-2 h-2 rounded-full bg-cyber-500"></span>
+              <span class="font-mono text-xs text-cyber-600 dark:text-cyber-400 uppercase tracking-wider font-semibold">SIEM &amp; EDR · Threat Hunting</span>
+            </div>
+            <h3 class="font-display font-bold text-xl text-slate-800 dark:text-white mb-3">Enterprise SOC Detection &amp; Triage Lab</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-5">
+              Built a virtualized monitoring environment pairing Splunk SIEM and Wazuh EDR. Simulated multi-stage adversary tactics aligned to MITRE ATT&amp;CK (T1003 OS Credential Dumping, T1059 Command &amp; Scripting Interpreter) and authored correlation searches to identify anomalous process trees.
+            </p>
+
+            <!-- Architecture pipeline -->
+            <div class="p-3 mb-5 bg-slate-50 dark:bg-black/40 border border-slate-200 dark:border-white/10 font-mono text-[11px] text-slate-700 dark:text-slate-300">
+              <span class="text-cyber-600 dark:text-cyber-400">// Pipeline:</span> Sysmon Telemetry → Wazuh Agent → Splunk SPL → Triage Playbook
+            </div>
+
+            <ul class="space-y-2 mb-6 text-xs text-slate-600 dark:text-slate-400">
+              <li class="flex items-start gap-2">
+                <span class="text-cyber-500 font-bold">✓</span>
+                <span>Crafted Splunk SPL queries for abnormal PowerShell execution and privilege spikes</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-cyber-500 font-bold">✓</span>
+                <span>Configured custom Wazuh XML rules mapped to MITRE ATT&amp;CK technique IDs</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-cyber-500 font-bold">✓</span>
+                <span>Documented incident triage playbooks with host isolation procedures</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap gap-1.5 mb-6">
+              <span class="font-mono text-[11px] px-2 py-0.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Splunk (SPL)</span>
+              <span class="font-mono text-[11px] px-2 py-0.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Wazuh EDR</span>
+              <span class="font-mono text-[11px] px-2 py-0.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Sysmon</span>
+              <span class="font-mono text-[11px] px-2 py-0.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">MITRE ATT&amp;CK</span>
+            </div>
+            <div class="inline-flex items-center justify-between w-full px-4 py-2.5 border border-slate-300 dark:border-white/15 text-slate-700 dark:text-slate-300 font-mono text-xs font-bold uppercase tracking-wider">
+              <span>Detection Rules &amp; Playbooks</span>
+              <span class="text-cyber-500">Active Lab</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Network Forensics & PCAP Analysis -->
+        <div class="project-card flex flex-col justify-between p-7 bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 hover:border-cyber-400/50 shadow-sm">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <span class="w-2 h-2 rounded-full bg-cyber-500"></span>
+              <span class="font-mono text-xs text-cyber-600 dark:text-cyber-400 uppercase tracking-wider font-semibold">Network Security · Packet Forensics</span>
+            </div>
+            <h3 class="font-display font-bold text-xl text-slate-800 dark:text-white mb-3">PCAP Traffic Analysis &amp; Beacon Detection</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-5">
+              Conducted deep packet inspection (DPI) and protocol decoding on malicious packet captures. Identified asynchronous Command &amp; Control (C2) beaconing patterns, investigated suspicious DNS tunneling queries, extracted Indicators of Compromise (IoCs), and authored Snort IDS perimeter signatures.
+            </p>
+
+            <!-- Architecture pipeline -->
+            <div class="p-3 mb-5 bg-slate-50 dark:bg-black/40 border border-slate-200 dark:border-white/10 font-mono text-[11px] text-slate-700 dark:text-slate-300">
+              <span class="text-cyber-600 dark:text-cyber-400">// Pipeline:</span> PCAP Capture → TCP Stream Reassembly → IoC Extraction → Snort Rule
+            </div>
+
+            <ul class="space-y-2 mb-6 text-xs text-slate-600 dark:text-slate-400">
+              <li class="flex items-start gap-2">
+                <span class="text-cyber-500 font-bold">✓</span>
+                <span>Decoded TCP/UDP/DNS streams to uncover hidden payload transfers</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-cyber-500 font-bold">✓</span>
+                <span>Correlated extracted domain/IP IoCs against VirusTotal &amp; AbuseIPDB</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-cyber-500 font-bold">✓</span>
+                <span>Authored custom Snort rules for automated intrusion alerting at the gateway</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap gap-1.5 mb-6">
+              <span class="font-mono text-[11px] px-2 py-0.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Wireshark</span>
+              <span class="font-mono text-[11px] px-2 py-0.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">TCP/IP</span>
+              <span class="font-mono text-[11px] px-2 py-0.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Snort / Suricata</span>
+              <span class="font-mono text-[11px] px-2 py-0.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Threat Intel</span>
+            </div>
+            <div class="inline-flex items-center justify-between w-full px-4 py-2.5 border border-slate-300 dark:border-white/15 text-slate-700 dark:text-slate-300 font-mono text-xs font-bold uppercase tracking-wider">
+              <span>PCAP Forensics &amp; Signatures</span>
+              <span class="text-cyber-500">Case Study</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -294,62 +491,68 @@
         </div>
       </div>
 
-      <!-- Proficiency bars -->
-      <div class="mt-10 p-6 bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/10">
-        <h3 class="font-bold text-sm uppercase tracking-wider mb-6 text-slate-800 dark:text-white">Core Competency Levels</h3>
-        <div class="grid md:grid-cols-2 gap-x-12 gap-y-4" id="skillBars">
-          <div>
-            <div class="flex justify-between mb-1.5">
-              <span class="text-sm text-slate-700 dark:text-slate-300">Network Security &amp; Monitoring</span>
-              <span class="font-mono text-xs text-cyber-600 dark:text-cyber-400">82%</span>
+      <!-- Operational Competencies Matrix -->
+      <div class="mt-10 p-7 bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/10">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
+          <h3 class="font-bold text-sm uppercase tracking-wider text-slate-800 dark:text-white">SOC Operational Framework &amp; Tooling Matrix</h3>
+          <span class="font-mono text-xs text-cyber-600 dark:text-cyber-400">// Defense-in-Depth Capabilities</span>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="p-4 bg-slate-50/70 dark:bg-black/40 border border-slate-200/80 dark:border-white/5">
+            <div class="flex items-center gap-2 mb-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyber-500"></span>
+              <h4 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-800 dark:text-white">SIEM &amp; Telemetry Ingestion</h4>
             </div>
-            <div class="h-1 bg-slate-100 dark:bg-white/10">
-              <div class="skill-bar-fill h-full bg-cyber-500" style="width: 0%" data-width="82%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between mb-1.5">
-              <span class="text-sm text-slate-700 dark:text-slate-300">Linux &amp; Bash</span>
-              <span class="font-mono text-xs text-cyber-600 dark:text-cyber-400">78%</span>
-            </div>
-            <div class="h-1 bg-slate-100 dark:bg-white/10">
-              <div class="skill-bar-fill h-full bg-cyber-500" style="width: 0%" data-width="78%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between mb-1.5">
-              <span class="text-sm text-slate-700 dark:text-slate-300">Python for Security</span>
-              <span class="font-mono text-xs text-cyber-600 dark:text-cyber-400">75%</span>
-            </div>
-            <div class="h-1 bg-slate-100 dark:bg-white/10">
-              <div class="skill-bar-fill h-full bg-cyber-500" style="width: 0%" data-width="75%"></div>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mb-3">Log aggregation, search syntax, query correlation, and endpoint telemetry processing.</p>
+            <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+              <span class="px-2 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Splunk (SPL)</span>
+              <span class="px-2 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Google Chronicle</span>
+              <span class="px-2 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Wazuh EDR</span>
+              <span class="px-2 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Linux auth.log / Syslog</span>
+              <span class="px-2 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Windows Sysmon</span>
             </div>
           </div>
-          <div>
-            <div class="flex justify-between mb-1.5">
-              <span class="text-sm text-slate-700 dark:text-slate-300">SIEM / Log Analysis</span>
-              <span class="font-mono text-xs text-cyber-600 dark:text-cyber-400">70%</span>
+
+          <div class="p-4 bg-slate-50/70 dark:bg-black/40 border border-slate-200/80 dark:border-white/5">
+            <div class="flex items-center gap-2 mb-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyber-500"></span>
+              <h4 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-800 dark:text-white">Threat Detection &amp; Mapping</h4>
             </div>
-            <div class="h-1 bg-slate-100 dark:bg-white/10">
-              <div class="skill-bar-fill h-full bg-cyber-500" style="width: 0%" data-width="70%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between mb-1.5">
-              <span class="text-sm text-slate-700 dark:text-slate-300">Incident Response</span>
-              <span class="font-mono text-xs text-cyber-600 dark:text-cyber-400">72%</span>
-            </div>
-            <div class="h-1 bg-slate-100 dark:bg-white/10">
-              <div class="skill-bar-fill h-full bg-cyber-500" style="width: 0%" data-width="72%"></div>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mb-3">Adversarial modeling, detection rule authoring, and attack surface classification.</p>
+            <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+              <span class="px-2 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">MITRE ATT&amp;CK</span>
+              <span class="px-2 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Cyber Kill Chain</span>
+              <span class="px-2 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Sigma Rules</span>
+              <span class="px-2 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Snort / Suricata IDS</span>
+              <span class="px-2 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">YARA Basics</span>
             </div>
           </div>
-          <div>
-            <div class="flex justify-between mb-1.5">
-              <span class="text-sm text-slate-700 dark:text-slate-300">SQL &amp; Database Security</span>
-              <span class="font-mono text-xs text-cyber-600 dark:text-cyber-400">76%</span>
+
+          <div class="p-4 bg-slate-50/70 dark:bg-black/40 border border-slate-200/80 dark:border-white/5">
+            <div class="flex items-center gap-2 mb-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyber-500"></span>
+              <h4 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-800 dark:text-white">Incident Response &amp; Triage</h4>
             </div>
-            <div class="h-1 bg-slate-100 dark:bg-white/10">
-              <div class="skill-bar-fill h-full bg-cyber-500" style="width: 0%" data-width="76%"></div>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mb-3">Triage playbooks, network packet decoding, and threat intelligence IoC correlation.</p>
+            <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+              <span class="px-2 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Wireshark PCAP</span>
+              <span class="px-2 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Alert Triage (NIST SP 800-61)</span>
+              <span class="px-2 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">VirusTotal / AbuseIPDB</span>
+              <span class="px-2 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Root-Cause Analysis</span>
+            </div>
+          </div>
+
+          <div class="p-4 bg-slate-50/70 dark:bg-black/40 border border-slate-200/80 dark:border-white/5">
+            <div class="flex items-center gap-2 mb-2.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyber-500"></span>
+              <h4 class="font-mono text-xs font-bold uppercase tracking-wider text-slate-800 dark:text-white">Security Automation &amp; Scripting</h4>
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mb-3">Automating repetitive analyst tasks, custom log parsers, and threat feed integrations.</p>
+            <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+              <span class="px-2 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Python 3 (re, requests, sqlite)</span>
+              <span class="px-2 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Linux / Bash Scripting</span>
+              <span class="px-2 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">SQL Queries &amp; Auditing</span>
+              <span class="px-2 py-0.5 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Git &amp; GitHub Copilot</span>
             </div>
           </div>
         </div>
@@ -482,8 +685,8 @@
               <span class="font-medium text-slate-700 dark:text-slate-300">Sep 2021 – Jun 2025</span>
             </div>
             <div class="flex justify-between text-sm">
-              <span class="text-slate-500">Reg. No.</span>
-              <span class="font-mono text-xs text-slate-600 dark:text-slate-400">R2116987R</span>
+              <span class="text-slate-500">Focus</span>
+              <span class="font-mono text-xs text-cyber-600 dark:text-cyber-400">Systems &amp; Security</span>
             </div>
           </div>
           <div class="p-3 bg-cyber-50 dark:bg-cyber-900/20 border border-cyber-200 dark:border-cyber-500/20">
@@ -574,14 +777,18 @@
         I'm actively seeking entry-level SOC Analyst roles, cybersecurity internships, and graduate opportunities. If you're looking for a motivated, certified security professional from Zimbabwe — let's talk.
       </p>
 
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-        <a href="mailto:matthewmagombo@example.com" class="inline-flex items-center gap-2 px-8 py-4 bg-cyber-600 dark:bg-cyber-500 text-white font-bold uppercase tracking-widest text-xs hover:bg-cyber-700 dark:hover:bg-cyber-400 transition-colors">
+      <div class="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mb-12">
+        <a href="mailto:mvmagombo@gmail.com" class="inline-flex items-center gap-2 px-7 py-3.5 bg-cyber-600 dark:bg-cyber-500 text-white font-bold uppercase tracking-widest text-xs hover:bg-cyber-700 dark:hover:bg-cyber-400 transition-colors">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-          Email Me
+          <span>Email Me (mvmagombo@gmail.com)</span>
         </a>
-        <a href="https://linkedin.com/in/matthew-magombo-21a7141ab/" target="_blank" class="inline-flex items-center gap-2 px-8 py-4 border border-slate-300 dark:border-cyber-500/40 text-slate-700 dark:text-cyber-400 font-bold uppercase tracking-widest text-xs hover:bg-slate-50 dark:hover:bg-cyber-900/20 transition-colors">
+        <a href="https://linkedin.com/in/matthew-magombo-21a7141ab/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-7 py-3.5 border border-slate-300 dark:border-cyber-500/40 text-slate-700 dark:text-cyber-400 font-bold uppercase tracking-widest text-xs hover:bg-slate-50 dark:hover:bg-cyber-900/20 transition-colors">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-          LinkedIn
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/VonMagombo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-7 py-3.5 border border-slate-300 dark:border-cyber-500/40 text-slate-700 dark:text-cyber-400 font-bold uppercase tracking-widest text-xs hover:bg-slate-50 dark:hover:bg-cyber-900/20 transition-colors">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>GitHub</span>
         </a>
       </div>
 
@@ -595,9 +802,11 @@
         <p class="text-slate-500 text-xs mb-1">$ whoami</p>
         <p class="text-white text-xs mb-3">matthew_vonroy_magombo</p>
         <p class="text-slate-500 text-xs mb-1">$ cat status.txt</p>
-        <p class="text-cyber-400 text-xs mb-3">AVAILABLE · HARARE, ZW · OPEN TO REMOTE</p>
-        <p class="text-slate-500 text-xs mb-1">$ cat skills.txt | grep -i "soc"</p>
-        <p class="text-green-400 text-xs mb-3">SIEM · IDS · Threat Detection · Incident Response · Log Analysis</p>
+        <p class="text-cyber-400 text-xs mb-3">AVAILABLE · HARARE (CAT / GMT+2) · OPEN TO REMOTE &amp; RELOCATION</p>
+        <p class="text-slate-500 text-xs mb-1">$ cat contacts.json</p>
+        <p class="text-green-400 text-xs mb-3">{ "email": "mvmagombo@gmail.com", "github": "VonMagombo", "linkedin": "matthew-magombo-21a7141ab" }</p>
+        <p class="text-slate-500 text-xs mb-1">$ cat focus.txt</p>
+        <p class="text-teal-300 text-xs mb-3">SIEM Automation · Threat Detection · Incident Response · EDR · PCAP Forensics</p>
         <p class="text-slate-500 text-xs">$ <span class="text-white animate-blink">|</span></p>
       </div>
     </div>
