@@ -1,49 +1,115 @@
 :root {
-  --glass-bg: rgba(255,255,255,0.85);
-  --glass-border: rgba(0,0,0,0.07);
+  --glass-bg: rgba(255, 255, 255, 0.88);
+  --glass-border: rgba(0, 0, 0, 0.08);
 }
+
 html.dark {
-  --glass-bg: rgba(10,20,18,0.85);
-  --glass-border: rgba(45,212,191,0.12);
+  --glass-bg: rgba(10, 20, 18, 0.85);
+  --glass-border: rgba(45, 212, 191, 0.12);
 }
-body { transition: background-color 0.4s ease, color 0.4s ease; }
+
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
 .glass {
   background: var(--glass-bg);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--glass-border);
 }
-::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: #000; }
-::-webkit-scrollbar-thumb { background: #14b8a6; border-radius: 0; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #060d0c;
+}
+::-webkit-scrollbar-thumb {
+  background: #0d9488;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #14b8a6;
+}
+
+/* Subtle tech grid background */
 .grid-bg {
   background-image:
-    linear-gradient(to right, rgba(20,184,166,0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(20,184,166,0.06) 1px, transparent 1px);
+    linear-gradient(to right, rgba(20, 184, 166, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(20, 184, 166, 0.06) 1px, transparent 1px);
   background-size: 28px 28px;
 }
-.cert-card:hover { transform: translateY(-4px); }
-.cert-card { transition: transform 0.3s ease, border-color 0.3s ease; }
-.skill-bar-fill { transition: width 1.2s cubic-bezier(0.22,1,0.36,1); }
+
+/* Card hover elevations */
+.cert-card, .project-card, .exp-card {
+  transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+.cert-card:hover, .project-card:hover, .exp-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Navigation active indicator */
+.nav-link {
+  position: relative;
+}
+
 .nav-link::after {
   content: '';
   display: block;
-  height: 1px;
+  height: 2px;
   background: #14b8a6;
   transform: scaleX(0);
-  transition: transform 0.3s ease;
+  transition: transform 0.25s ease;
   transform-origin: left;
 }
-.nav-link:hover::after { transform: scaleX(1); }
-@keyframes glitch {
-  0%, 100% { clip-path: inset(0 0 98% 0); transform: translate(-2px, 0); }
-  20% { clip-path: inset(40% 0 40% 0); transform: translate(2px, 0); }
-  40% { clip-path: inset(80% 0 5% 0); transform: translate(-1px, 0); }
-  60% { clip-path: inset(10% 0 70% 0); transform: translate(1px, 0); }
-  80% { clip-path: inset(60% 0 20% 0); transform: translate(-2px, 0); }
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
 }
-.project-card { transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; }
-.project-card:hover { transform: translateY(-4px); }
-.animate-fade-in-up { opacity: 0; }
+
+/* Scroll reveal classes */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero animations */
+.animate-fade-in-up {
+  opacity: 0;
+}
+
 .initiated.animate-fade-in-up,
-.initiated .animate-fade-in-up { animation: fadeInUp 0.7s ease-out forwards; }
+.initiated .animate-fade-in-up {
+  animation: fadeInUp 0.7s ease-out forwards;
+}
+
+/* Accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .cert-card:hover, .project-card:hover, .exp-card:hover {
+    transform: none !important;
+  }
+  .animate-scan,
+  .animate-pulse,
+  .animate-pulse-slow,
+  .animate-blink,
+  .animate-fade-in-up,
+  .animate-expand {
+    animation: none !important;
+  }
+}

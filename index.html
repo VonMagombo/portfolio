@@ -3,22 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Matthew Vonroy Magombo | SOC Analyst</title>
-  <meta name="description" content="Aspiring Cybersecurity SOC Analyst — Matthew Vonroy Magombo. BSc Computer Systems Engineering, Google Cybersecurity Certified, ALX Cybersecurity." />
-  <meta name="keywords" content="SOC Analyst, Cybersecurity, Threat Detection, Incident Response, SIEM, Splunk, Linux, Python, Matthew Magombo" />
+  <title>Matthew Vonroy Magombo | SOC Analyst &amp; Cybersecurity Specialist</title>
+  <meta name="description" content="Cybersecurity SOC Analyst &amp; Computer Systems Engineer — Matthew Vonroy Magombo. Google Cybersecurity Certified, ALX Certified, Microsoft Copilot Certified. Specializing in SIEM, threat detection, and incident response." />
+  <meta name="keywords" content="SOC Analyst, Cybersecurity, Threat Detection, Incident Response, SIEM, Splunk, Linux, Python, Matthew Magombo, Zimbabwe" />
   <meta name="author" content="Matthew Vonroy Magombo" />
   <meta name="theme-color" content="#060d0c" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <!-- Open Graph / Social Sharing -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Matthew Vonroy Magombo | SOC Analyst" />
-  <meta property="og:description" content="Cybersecurity SOC Analyst specializing in threat detection, SIEM log analysis, and incident response." />
+  <meta property="og:title" content="Matthew Vonroy Magombo | SOC Analyst &amp; Cybersecurity Specialist" />
+  <meta property="og:description" content="Cybersecurity SOC Analyst specializing in threat detection, SIEM log analysis, EDR, and incident response." />
   <meta property="og:image" content="assets/matthew-profile.jpg" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Matthew Vonroy Magombo | SOC Analyst" />
-  <meta name="twitter:description" content="Cybersecurity SOC Analyst specializing in threat detection, SIEM log analysis, and incident response." />
+  <meta name="twitter:title" content="Matthew Vonroy Magombo | SOC Analyst &amp; Cybersecurity Specialist" />
+  <meta name="twitter:description" content="Cybersecurity SOC Analyst specializing in threat detection, SIEM log analysis, EDR, and incident response." />
   <meta name="twitter:image" content="assets/matthew-profile.jpg" />
+  <!-- JSON-LD Structured Data for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Matthew Vonroy Magombo",
+    "jobTitle": "Cybersecurity SOC Analyst",
+    "email": "mailto:mvmagombo@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/matthew-v-magombo/",
+      "https://github.com/VonMagombo"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Midlands State University"
+    },
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Google Cybersecurity Professional Certificate"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "ALX Cybersecurity Programme Certificate"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Microsoft GitHub Copilot Certification"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Kubernetes and Cloud Native Essentials (LFS250)"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Oracle Cloud Infrastructure 2025 AI Foundations Associate"
+      }
+    ],
+    "knowsAbout": [
+      "Security Operations Center (SOC)",
+      "Threat Detection & Analysis",
+      "Incident Response",
+      "SIEM Tools (Splunk, Chronicle)",
+      "EDR & Sysmon",
+      "Packet Forensics (Wireshark)",
+      "Python Security Automation",
+      "Linux & Bash Scripting"
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -36,10 +86,15 @@
             cyber: {
               50: '#f0fdf9',
               100: '#ccfbef',
+              200: '#99f6e4',
+              300: '#5eead4',
               400: '#2dd4bf',
               500: '#14b8a6',
               600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
               900: '#134e4a',
+              950: '#042f2e',
             }
           },
           animation: {
@@ -83,11 +138,12 @@
   <!-- NAV -->
   <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-black/5 dark:border-cyber-500/10">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="#home" class="font-mono text-sm font-bold text-cyber-600 dark:text-cyber-400 tracking-widest uppercase">
-        MVM<span class="animate-blink">_</span>
+      <a href="#home" class="font-mono text-sm font-bold text-cyber-600 dark:text-cyber-400 tracking-widest uppercase flex items-center gap-1.5" aria-label="Home">
+        <span>MVM</span><span class="animate-blink text-cyber-500">_</span>
       </a>
-      <div class="hidden md:flex items-center gap-7">
+      <div class="hidden lg:flex items-center gap-6">
         <a href="#about" class="nav-link text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400 hover:text-cyber-600 dark:hover:text-cyber-400 transition-colors">About</a>
+        <a href="#experience" class="nav-link text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400 hover:text-cyber-600 dark:hover:text-cyber-400 transition-colors">Experience</a>
         <a href="#projects" class="nav-link text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400 hover:text-cyber-600 dark:hover:text-cyber-400 transition-colors">Projects</a>
         <a href="#skills" class="nav-link text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400 hover:text-cyber-600 dark:hover:text-cyber-400 transition-colors">Skills</a>
         <a href="#certifications" class="nav-link text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400 hover:text-cyber-600 dark:hover:text-cyber-400 transition-colors">Certifications</a>
@@ -95,26 +151,37 @@
         <a href="#contact" class="nav-link text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400 hover:text-cyber-600 dark:hover:text-cyber-400 transition-colors">Contact</a>
       </div>
       <div class="flex items-center gap-3">
-        <a href="#contact" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 border border-cyber-500/40 text-cyber-600 dark:text-cyber-400 font-mono text-xs font-bold uppercase tracking-wider hover:bg-cyber-50 dark:hover:bg-cyber-900/30 transition-colors">
+        <a href="assets/Matthew_Vonroy_Magombo_CV.pdf" download="Matthew_Vonroy_Magombo_CV.pdf" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 border border-cyber-500/40 text-cyber-700 dark:text-cyber-400 font-mono text-xs font-bold uppercase tracking-wider hover:bg-cyber-50 dark:hover:bg-cyber-900/30 transition-colors" title="Download Official CV">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>CV</span>
+        </a>
+        <a href="#contact" class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 bg-cyber-600 text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-cyber-700 transition-colors">
           <span>Get In Touch</span>
         </a>
         <button id="themeToggle" class="w-9 h-9 border border-slate-200 dark:border-cyber-500/30 flex items-center justify-center text-slate-500 dark:text-cyber-400 hover:bg-cyber-50 dark:hover:bg-cyber-900/30 transition-colors" aria-label="Toggle theme">
           <svg id="sunIcon" class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           <svg id="moonIcon" class="w-4 h-4 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
         </button>
-        <button id="mobileMenuBtn" class="md:hidden w-9 h-9 border border-slate-200 dark:border-cyber-500/30 flex items-center justify-center text-slate-700 dark:text-slate-300" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+        <button id="mobileMenuBtn" class="lg:hidden w-9 h-9 border border-slate-200 dark:border-cyber-500/30 flex items-center justify-center text-slate-700 dark:text-slate-300" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
       </div>
     </div>
     <!-- Mobile menu -->
-    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-100 dark:border-cyber-500/10 px-6 py-4 flex flex-col gap-4">
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-100 dark:border-cyber-500/10 px-6 py-4 flex flex-col gap-4">
       <a href="#about" class="text-sm font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300">About</a>
+      <a href="#experience" class="text-sm font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300">Experience</a>
       <a href="#projects" class="text-sm font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300">Projects</a>
       <a href="#skills" class="text-sm font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300">Skills</a>
       <a href="#certifications" class="text-sm font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300">Certifications</a>
       <a href="#education" class="text-sm font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300">Education</a>
       <a href="#contact" class="text-sm font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300">Contact</a>
+      <div class="pt-2 border-t border-slate-100 dark:border-white/10 flex items-center gap-3">
+        <a href="assets/Matthew_Vonroy_Magombo_CV.pdf" download="Matthew_Vonroy_Magombo_CV.pdf" class="inline-flex items-center gap-1.5 px-3 py-1.5 border border-cyber-500/40 text-cyber-700 dark:text-cyber-400 font-mono text-xs font-bold uppercase tracking-wider">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Download CV (PDF)</span>
+        </a>
+      </div>
     </div>
   </nav>
 
@@ -158,14 +225,18 @@
               Explore Projects
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
-            <a href="#contact" class="inline-flex items-center justify-center gap-2 px-6 py-3 border border-cyber-500/40 text-cyber-700 dark:text-cyber-400 font-bold uppercase tracking-widest text-xs hover:bg-cyber-50 dark:hover:bg-cyber-900/20 transition-colors">
-              Get In Touch
+            <a href="assets/Matthew_Vonroy_Magombo_CV.pdf" download="Matthew_Vonroy_Magombo_CV.pdf" class="inline-flex items-center justify-center gap-2 px-5 py-3 border border-cyber-500/50 text-cyber-700 dark:text-cyber-400 font-bold uppercase tracking-widest text-xs hover:bg-cyber-50 dark:hover:bg-cyber-900/20 transition-colors" title="Download CV PDF">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              <span>Download CV</span>
+            </a>
+            <a href="#contact" class="inline-flex items-center justify-center gap-2 px-5 py-3 border border-slate-300 dark:border-white/15 text-slate-700 dark:text-slate-300 font-bold uppercase tracking-widest text-xs hover:bg-slate-100 dark:hover:bg-white/5 transition-colors">
+              Contact
             </a>
             <a href="https://github.com/VonMagombo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-3 border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-300 font-bold uppercase tracking-widest text-xs hover:bg-slate-100 dark:hover:bg-white/5 transition-colors" title="GitHub Profile">
               <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
               <span>GitHub</span>
             </a>
-            <a href="https://linkedin.com/in/matthew-magombo-21a7141ab/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-3 border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-300 font-bold uppercase tracking-widest text-xs hover:bg-slate-100 dark:hover:bg-white/5 transition-colors" title="LinkedIn Profile">
+            <a href="https://www.linkedin.com/in/matthew-v-magombo/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-3 border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-300 font-bold uppercase tracking-widest text-xs hover:bg-slate-100 dark:hover:bg-white/5 transition-colors" title="LinkedIn Profile">
               <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
               <span>LinkedIn</span>
             </a>
@@ -207,7 +278,7 @@
   <section id="about" class="py-28 bg-white dark:bg-black border-t border-b border-slate-100 dark:border-white/5">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid lg:grid-cols-2 gap-16 items-start">
-        <div>
+        <div class="reveal-on-scroll">
           <p class="font-mono text-xs text-cyber-600 dark:text-cyber-400 tracking-widest uppercase mb-3">// About Me</p>
           <h2 class="font-display font-bold text-4xl md:text-5xl tracking-tighter mb-6">
             Defending the<br/><span class="text-cyber-600 dark:text-cyber-400">Digital Frontier</span>
@@ -215,42 +286,140 @@
           <div class="h-[2px] w-16 bg-cyber-500 mb-8"></div>
           <div class="space-y-4 text-slate-600 dark:text-slate-400 leading-relaxed">
             <p>
-              Born and raised in Harare, Zimbabwe, I graduated from <strong class="text-slate-800 dark:text-white">Midlands State University</strong> with a BSc Honours (2.1) in Computer Systems Engineering — building a strong foundation in networks, operating systems, embedded systems, and software development.
+              Born and raised in Harare, Zimbabwe, I graduated from <strong class="text-slate-800 dark:text-white">Midlands State University</strong> with a BSc Honours (2.1) in Computer Systems Engineering — building a rigorous technical foundation in networking protocols, operating systems, software engineering, and computer architecture.
             </p>
             <p>
-              My journey into cybersecurity has been driven by a deep interest in how adversaries operate and how defenders can stay one step ahead. I've earned the <strong class="text-slate-800 dark:text-white">Google Cybersecurity Professional Certificate</strong>, completed the <strong class="text-slate-800 dark:text-white">ALX 13-week Cybersecurity Programme</strong>, and hold a <strong class="text-slate-800 dark:text-white">Microsoft GitHub Copilot Certification</strong>.
+              My focus in cybersecurity combines an adversary-aware mindset with structured defensive engineering. I hold the <strong class="text-slate-800 dark:text-white">Google Cybersecurity Professional Certificate</strong>, completed the <strong class="text-slate-800 dark:text-white">ALX 13-week Cybersecurity Programme</strong>, certified in <strong class="text-slate-800 dark:text-white">Kubernetes &amp; Cloud Native Essentials (LFS250)</strong> by The Linux Foundation, and earned the <strong class="text-slate-800 dark:text-white">Microsoft GitHub Copilot Certification</strong>.
             </p>
             <p>
-              My goal is to join a SOC team where I can apply my skills in threat monitoring, log analysis, and incident response to protect organizations from evolving cyber threats.
+              With practical experience in enterprise IT systems at the Central Vehicle Registry and custom SOC lab builds (Splunk, Wazuh, Python SIEM automation), I am prepared to deliver immediate value to a Security Operations Center in alert triage, log correlation, and incident mitigation.
             </p>
           </div>
         </div>
         <!-- Quick stats -->
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-2 gap-4 reveal-on-scroll">
           <div class="p-6 border border-slate-200 dark:border-white/10 bg-slate-50/50 dark:bg-white/[0.02] hover:border-cyber-400/40 transition-colors">
             <p class="font-mono font-bold text-3xl text-cyber-600 dark:text-cyber-400 mb-1">2.1</p>
             <p class="font-bold text-sm text-slate-800 dark:text-white mb-0.5">Degree Class</p>
-            <p class="text-xs text-slate-500 dark:text-slate-500">Upper Second</p>
+            <p class="text-xs text-slate-500 dark:text-slate-500">BSc Hons Computer Systems Eng.</p>
           </div>
           <div class="p-6 border border-slate-200 dark:border-white/10 bg-slate-50/50 dark:bg-white/[0.02] hover:border-cyber-400/40 transition-colors">
-            <p class="font-mono font-bold text-3xl text-cyber-600 dark:text-cyber-400 mb-1">3+</p>
+            <p class="font-mono font-bold text-3xl text-cyber-600 dark:text-cyber-400 mb-1">5</p>
             <p class="font-bold text-sm text-slate-800 dark:text-white mb-0.5">Certifications</p>
-            <p class="text-xs text-slate-500 dark:text-slate-500">Industry Credentials</p>
+            <p class="text-xs text-slate-500 dark:text-slate-500">Google · ALX · Linux Fdn · Microsoft</p>
           </div>
           <div class="p-6 border border-slate-200 dark:border-white/10 bg-slate-50/50 dark:bg-white/[0.02] hover:border-cyber-400/40 transition-colors">
-            <p class="font-mono font-bold text-3xl text-cyber-600 dark:text-cyber-400 mb-1">4 yrs</p>
-            <p class="font-bold text-sm text-slate-800 dark:text-white mb-0.5">Degree Duration</p>
-            <p class="text-xs text-slate-500 dark:text-slate-500">Sep 2021 – Jun 2025</p>
+            <p class="font-mono font-bold text-3xl text-cyber-600 dark:text-cyber-400 mb-1">11 mos</p>
+            <p class="font-bold text-sm text-slate-800 dark:text-white mb-0.5">Enterprise IT</p>
+            <p class="text-xs text-slate-500 dark:text-slate-500">Central Vehicle Registry Support</p>
           </div>
           <div class="p-6 border border-slate-200 dark:border-white/10 bg-slate-50/50 dark:bg-white/[0.02] hover:border-cyber-400/40 transition-colors">
             <p class="font-mono font-bold text-3xl text-cyber-600 dark:text-cyber-400 mb-1">ZWE</p>
             <p class="font-bold text-sm text-slate-800 dark:text-white mb-0.5">Harare, Zimbabwe</p>
-            <p class="text-xs text-slate-500 dark:text-slate-500">CAT (GMT+2) · Open to Remote &amp; Relocation</p>
+            <p class="text-xs text-slate-500 dark:text-slate-500">CAT (GMT+2) · Remote &amp; Relocation</p>
           </div>
           <div class="col-span-2 p-5 border border-cyber-500/30 dark:border-cyber-400/20 bg-cyber-50/50 dark:bg-cyber-900/10">
             <p class="font-mono text-xs text-cyber-600 dark:text-cyber-400 mb-2 uppercase tracking-wider">// Target Role</p>
-            <p class="font-bold text-slate-800 dark:text-white">SOC Analyst (Tier 1 / Tier 2)</p>
-            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Threat Detection · Incident Response · Log Analysis · SIEM Automation</p>
+            <p class="font-bold text-slate-800 dark:text-white">SOC Analyst (Tier 1 / Tier 2) · Security Operations Specialist</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Threat Detection · Incident Response · SIEM Log Correlation · EDR Monitoring</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="py-28 relative overflow-hidden bg-slate-50/50 dark:bg-[#070e0d] border-t border-b border-slate-100 dark:border-white/5">
+    <div class="absolute inset-0 grid-bg opacity-30 dark:opacity-50"></div>
+    <div class="relative max-w-6xl mx-auto px-6">
+      <div class="mb-16 reveal-on-scroll">
+        <p class="font-mono text-xs text-cyber-600 dark:text-cyber-400 tracking-widest uppercase mb-3">// Career Track Record</p>
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div>
+            <h2 class="font-display font-bold text-4xl md:text-5xl tracking-tighter">Professional Experience</h2>
+            <div class="h-[2px] w-16 bg-cyber-500 mt-4"></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400 max-w-md">
+            Hands-on IT operations, systems administration, network troubleshooting, and technical mentorship in enterprise and educational environments.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        <!-- Experience 1: Central Vehicle Registry -->
+        <div class="exp-card p-7 bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 hover:border-cyber-400/50 shadow-sm reveal-on-scroll">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <span class="w-2 h-2 rounded-full bg-cyber-500"></span>
+                <span class="font-mono text-xs text-cyber-600 dark:text-cyber-400 uppercase tracking-wider font-semibold">Enterprise IT &amp; Systems Support</span>
+              </div>
+              <h3 class="font-display font-bold text-xl text-slate-800 dark:text-white">IT Intern</h3>
+              <p class="text-sm font-medium text-slate-600 dark:text-slate-300">Central Vehicle Registry (CVR) · Harare, Zimbabwe</p>
+            </div>
+            <div class="text-left sm:text-right">
+              <span class="inline-block font-mono text-xs px-2.5 py-1 bg-cyber-50 dark:bg-cyber-900/30 border border-cyber-200 dark:border-cyber-500/30 text-cyber-700 dark:text-cyber-300">
+                Oct 2023 – Aug 2024 (11 mos)
+              </span>
+            </div>
+          </div>
+
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+            Provided technical support for enterprise vehicle registration databases and critical infrastructure, helping maintain high system availability and operational continuity in a high-demand government IT environment.
+          </p>
+
+          <ul class="space-y-2 mb-5 text-xs text-slate-600 dark:text-slate-400">
+            <li class="flex items-start gap-2">
+              <span class="text-cyber-500 font-bold">✓</span>
+              <span>Diagnosed and resolved software, hardware, and network incidents across departments to reduce user downtime.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-cyber-500 font-bold">✓</span>
+              <span>Maintained comprehensive technical documentation, incident logs, and system support operating procedures.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-cyber-500 font-bold">✓</span>
+              <span>Collaborated with senior engineers to analyze system faults, telemetry logs, and support performance improvements.</span>
+            </li>
+          </ul>
+
+          <div class="flex flex-wrap gap-1.5 pt-4 border-t border-slate-100 dark:border-white/5 font-mono text-[11px]">
+            <span class="px-2 py-0.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Enterprise Systems</span>
+            <span class="px-2 py-0.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Hardware &amp; Network Triage</span>
+            <span class="px-2 py-0.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Incident Logging</span>
+            <span class="px-2 py-0.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">User Access Management</span>
+            <span class="px-2 py-0.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Linux / Windows</span>
+          </div>
+        </div>
+
+        <!-- Experience 2: Opening Horizons Academy -->
+        <div class="exp-card p-7 bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 hover:border-cyber-400/50 shadow-sm reveal-on-scroll">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <span class="w-2 h-2 rounded-full bg-cyber-500"></span>
+                <span class="font-mono text-xs text-cyber-600 dark:text-cyber-400 uppercase tracking-wider font-semibold">Technical Education &amp; Mentorship</span>
+              </div>
+              <h3 class="font-display font-bold text-xl text-slate-800 dark:text-white">Computer Science Tutor</h3>
+              <p class="text-sm font-medium text-slate-600 dark:text-slate-300">Opening Horizons Academy · Harare, Zimbabwe</p>
+            </div>
+            <div class="text-left sm:text-right">
+              <span class="inline-block font-mono text-xs px-2.5 py-1 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-600 dark:text-slate-400">
+                Jan 2023 – May 2023 (5 mos)
+              </span>
+            </div>
+          </div>
+
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+            Delivered structured instruction in programming, relational databases, data structures, algorithms, and network protocols, coaching students through hands-on laboratory exercises.
+          </p>
+
+          <div class="flex flex-wrap gap-1.5 pt-4 border-t border-slate-100 dark:border-white/5 font-mono text-[11px]">
+            <span class="px-2 py-0.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Python</span>
+            <span class="px-2 py-0.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">C++</span>
+            <span class="px-2 py-0.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">SQL &amp; Relational Schemas</span>
+            <span class="px-2 py-0.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Networking Fundamentals</span>
+            <span class="px-2 py-0.5 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300">Technical Mentorship</span>
           </div>
         </div>
       </div>
@@ -569,12 +738,12 @@
         <div class="h-[2px] w-16 bg-cyber-500 mt-4"></div>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- Google Cybersecurity -->
-        <div class="cert-card p-6 bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 hover:border-cyber-400/50 dark:hover:border-cyber-400/50">
+        <div class="cert-card p-6 bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 hover:border-cyber-400/50 dark:hover:border-cyber-400/50 reveal-on-scroll">
           <div class="flex items-start gap-3 mb-5">
-            <div class="w-12 h-12 bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 flex items-center justify-center shrink-0 text-xl">G</div>
+            <div class="w-12 h-12 bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 flex items-center justify-center shrink-0 text-xl font-bold text-slate-800 dark:text-white">G</div>
             <div>
               <p class="font-mono text-xs text-cyber-600 dark:text-cyber-400 uppercase tracking-wider mb-0.5">Google · Coursera</p>
               <h3 class="font-bold text-slate-800 dark:text-white leading-tight">Google Cybersecurity<br/>Professional Certificate</h3>
@@ -584,37 +753,36 @@
           <div class="space-y-1.5 mb-5">
             <div class="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
               <svg class="w-3 h-3 text-cyber-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Foundations of Cybersecurity
+              Foundations of Cybersecurity &amp; Network Security
             </div>
             <div class="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
               <svg class="w-3 h-3 text-cyber-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              SIEM Tools &amp; IDS
+              SIEM Tools (Splunk, Chronicle) &amp; IDS/IPS
             </div>
             <div class="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
               <svg class="w-3 h-3 text-cyber-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Python Automation
+              Python Security Scripting &amp; Automation
             </div>
             <div class="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
               <svg class="w-3 h-3 text-cyber-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Linux &amp; SQL
+              Linux CLI &amp; SQL Database Auditing
             </div>
             <div class="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
               <svg class="w-3 h-3 text-cyber-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Assets, Threats &amp; Vulnerabilities
-            </div>
-            <div class="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
-              <svg class="w-3 h-3 text-cyber-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Detection &amp; Response
+              Incident Detection &amp; Response Workflows
             </div>
           </div>
           <div class="flex items-center justify-between pt-4 border-t border-slate-200 dark:border-white/10">
             <span class="font-mono text-xs text-slate-500">Dec 2025</span>
-            <a href="https://coursera.org/verify/professional-cert/CJWUQROHFLJO" target="_blank" class="font-mono text-xs text-cyber-600 dark:text-cyber-400 hover:underline">Verify ↗</a>
+            <a href="https://coursera.org/verify/professional-cert/CJWUQROHFLJO" target="_blank" rel="noopener noreferrer" class="font-mono text-xs text-cyber-600 dark:text-cyber-400 hover:underline inline-flex items-center gap-1">
+              <span>Verify</span>
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
           </div>
         </div>
 
         <!-- ALX Cybersecurity -->
-        <div class="cert-card p-6 bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 hover:border-cyber-400/50 dark:hover:border-cyber-400/50">
+        <div class="cert-card p-6 bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 hover:border-cyber-400/50 dark:hover:border-cyber-400/50 reveal-on-scroll">
           <div class="flex items-start gap-3 mb-5">
             <div class="w-12 h-12 bg-[#0a1628] border border-slate-200 dark:border-white/10 flex items-center justify-center shrink-0 text-white font-bold text-sm">alx</div>
             <div>
@@ -622,19 +790,42 @@
               <h3 class="font-bold text-slate-800 dark:text-white leading-tight">Cybersecurity<br/>Programme Certificate</h3>
             </div>
           </div>
-          <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Intensive 13-week programme in cybersecurity, covering practical defence strategies, ethical hacking fundamentals, and security operations.</p>
+          <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Intensive 13-week programme covering defensive cyber strategies, ethical hacking fundamentals, and hands-on security operations.</p>
           <div class="p-3 bg-white dark:bg-black/40 border border-slate-200 dark:border-white/10 mb-5">
             <p class="font-mono text-xs text-slate-500 dark:text-slate-400">Program: <span class="text-slate-700 dark:text-slate-300">Cybersecurity (13-week)</span></p>
             <p class="font-mono text-xs text-slate-500 dark:text-slate-400 mt-1">Issued by: <span class="text-slate-700 dark:text-slate-300">Fred Swaniker, CEO AL Group</span></p>
           </div>
           <div class="flex items-center justify-between pt-4 border-t border-slate-200 dark:border-white/10">
             <span class="font-mono text-xs text-slate-500">Apr 2026</span>
-            <a href="https://savanna.alxafrica.com/certificates/ZF7snN8RHM" target="_blank" class="font-mono text-xs text-cyber-600 dark:text-cyber-400 hover:underline">Verify ↗</a>
+            <a href="https://savanna.alxafrica.com/certificates/ZF7snN8RHM" target="_blank" rel="noopener noreferrer" class="font-mono text-xs text-cyber-600 dark:text-cyber-400 hover:underline inline-flex items-center gap-1">
+              <span>Verify</span>
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
           </div>
         </div>
 
-        <!-- GitHub Copilot -->
-        <div class="cert-card p-6 bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 hover:border-cyber-400/50 dark:hover:border-cyber-400/50">
+        <!-- Linux Foundation: Kubernetes & Cloud Native -->
+        <div class="cert-card p-6 bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 hover:border-cyber-400/50 dark:hover:border-cyber-400/50 reveal-on-scroll">
+          <div class="flex items-start gap-3 mb-5">
+            <div class="w-12 h-12 bg-[#003B5C] border border-slate-200 dark:border-white/10 flex items-center justify-center shrink-0 text-white font-bold text-xs">LF</div>
+            <div>
+              <p class="font-mono text-xs text-cyber-600 dark:text-cyber-400 uppercase tracking-wider mb-0.5">The Linux Foundation</p>
+              <h3 class="font-bold text-slate-800 dark:text-white leading-tight">Kubernetes &amp; Cloud Native<br/>Essentials (LFS250)</h3>
+            </div>
+          </div>
+          <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Cloud native architecture, container security fundamentals, Kubernetes cluster concepts, orchestration, and infrastructure monitoring.</p>
+          <div class="space-y-1 mb-5">
+            <p class="font-mono text-xs text-slate-500 dark:text-slate-400">ID: <span class="text-slate-700 dark:text-slate-300">LF-4nx7w75zcm</span></p>
+            <p class="font-mono text-xs text-slate-500 dark:text-slate-400">Issued: <span class="text-slate-700 dark:text-slate-300">July 06, 2026</span></p>
+          </div>
+          <div class="flex items-center justify-between pt-4 border-t border-slate-200 dark:border-white/10">
+            <span class="font-mono text-xs text-slate-500">Jul 2026</span>
+            <span class="font-mono text-xs text-cyber-600 dark:text-cyber-400">Certified</span>
+          </div>
+        </div>
+
+        <!-- Microsoft GitHub Copilot -->
+        <div class="cert-card p-6 bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 hover:border-cyber-400/50 dark:hover:border-cyber-400/50 reveal-on-scroll">
           <div class="flex items-start gap-3 mb-5">
             <div class="w-12 h-12 bg-[#0d1117] border border-slate-200 dark:border-white/10 flex items-center justify-center shrink-0">
               <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
@@ -644,14 +835,37 @@
               <h3 class="font-bold text-slate-800 dark:text-white leading-tight">GitHub Copilot<br/>Certification</h3>
             </div>
           </div>
-          <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Certified in AI-assisted development using GitHub Copilot — enabling faster, more secure code writing and security automation workflows.</p>
+          <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Certified in AI-assisted development using GitHub Copilot — accelerating secure automation, testing, and defensive script authoring.</p>
           <div class="space-y-1 mb-5">
             <p class="font-mono text-xs text-slate-500 dark:text-slate-400">ID: <span class="text-slate-700 dark:text-slate-300">4D1A6B4306E7BDD5</span></p>
             <p class="font-mono text-xs text-slate-500 dark:text-slate-400">Valid: <span class="text-slate-700 dark:text-slate-300">Dec 2025 – Dec 2027</span></p>
           </div>
           <div class="flex items-center justify-between pt-4 border-t border-slate-200 dark:border-white/10">
             <span class="font-mono text-xs text-slate-500">Dec 2025</span>
-            <a href="https://learn.microsoft.com/en-au/users/matthewvonroymagombo-7987/credentials/certification/github-copilot" target="_blank" class="font-mono text-xs text-cyber-600 dark:text-cyber-400 hover:underline">Verify ↗</a>
+            <a href="https://learn.microsoft.com/en-au/users/matthewvonroymagombo-7987/credentials/certification/github-copilot" target="_blank" rel="noopener noreferrer" class="font-mono text-xs text-cyber-600 dark:text-cyber-400 hover:underline inline-flex items-center gap-1">
+              <span>Verify</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Oracle Cloud Infrastructure AI -->
+        <div class="cert-card p-6 bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 hover:border-cyber-400/50 dark:hover:border-cyber-400/50 reveal-on-scroll">
+          <div class="flex items-start gap-3 mb-5">
+            <div class="w-12 h-12 bg-[#c74634] border border-slate-200 dark:border-white/10 flex items-center justify-center shrink-0 text-white font-bold text-sm">OCI</div>
+            <div>
+              <p class="font-mono text-xs text-cyber-600 dark:text-cyber-400 uppercase tracking-wider mb-0.5">Oracle University</p>
+              <h3 class="font-bold text-slate-800 dark:text-white leading-tight">OCI AI Foundations<br/>Associate</h3>
+            </div>
+          </div>
+          <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Core concepts in artificial intelligence, machine learning pipelines, cloud services infrastructure, and AI-driven automation on Oracle Cloud.</p>
+          <div class="space-y-1 mb-5">
+            <p class="font-mono text-xs text-slate-500 dark:text-slate-400">Credential: <span class="text-slate-700 dark:text-slate-300">OCI 2025 AI Foundations</span></p>
+            <p class="font-mono text-xs text-slate-500 dark:text-slate-400">Issuer: <span class="text-slate-700 dark:text-slate-300">Oracle</span></p>
+          </div>
+          <div class="flex items-center justify-between pt-4 border-t border-slate-200 dark:border-white/10">
+            <span class="font-mono text-xs text-slate-500">2025</span>
+            <span class="font-mono text-xs text-cyber-600 dark:text-cyber-400">Certified</span>
           </div>
         </div>
 
@@ -663,15 +877,15 @@
   <section id="education" class="py-28 relative">
     <div class="absolute inset-0 grid-bg opacity-30 dark:opacity-50"></div>
     <div class="relative max-w-6xl mx-auto px-6">
-      <div class="mb-16">
-        <p class="font-mono text-xs text-cyber-600 dark:text-cyber-400 tracking-widest uppercase mb-3">// Academic Background</p>
+      <div class="mb-16 reveal-on-scroll">
+        <p class="font-mono text-xs text-cyber-600 dark:text-cyber-400 tracking-widest uppercase mb-3">// Academic Foundation</p>
         <h2 class="font-display font-bold text-4xl md:text-5xl tracking-tighter">Education</h2>
         <div class="h-[2px] w-16 bg-cyber-500 mt-4"></div>
       </div>
 
       <div class="grid lg:grid-cols-3 gap-8 items-start">
         <!-- Degree card -->
-        <div class="lg:col-span-1 p-6 bg-white dark:bg-white/[0.02] border border-cyber-500/30 dark:border-cyber-400/20">
+        <div class="lg:col-span-1 p-6 bg-white dark:bg-white/[0.02] border border-cyber-500/30 dark:border-cyber-400/20 reveal-on-scroll">
           <p class="font-mono text-xs text-cyber-600 dark:text-cyber-400 uppercase tracking-wider mb-3">Degree</p>
           <h3 class="font-bold text-xl text-slate-800 dark:text-white leading-tight mb-2">BSc Honours in Computer Systems Engineering</h3>
           <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Midlands State University, Gweru, Zimbabwe</p>
@@ -686,7 +900,7 @@
             </div>
             <div class="flex justify-between text-sm">
               <span class="text-slate-500">Focus</span>
-              <span class="font-mono text-xs text-cyber-600 dark:text-cyber-400">Systems &amp; Security</span>
+              <span class="font-mono text-xs text-cyber-600 dark:text-cyber-400">Systems &amp; Security Engineering</span>
             </div>
           </div>
           <div class="p-3 bg-cyber-50 dark:bg-cyber-900/20 border border-cyber-200 dark:border-cyber-500/20">
@@ -694,19 +908,17 @@
           </div>
         </div>
 
-        <!-- Relevant modules -->
-        <div class="lg:col-span-2 p-6 bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/10">
-          <h3 class="font-bold text-sm uppercase tracking-wider mb-6 text-slate-800 dark:text-white">Security-Relevant Modules</h3>
+        <!-- Selected Engineering Coursework -->
+        <div class="lg:col-span-2 p-6 bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 reveal-on-scroll">
+          <div class="flex items-center justify-between mb-6 flex-wrap gap-2">
+            <h3 class="font-bold text-sm uppercase tracking-wider text-slate-800 dark:text-white">Selected Engineering Coursework</h3>
+            <span class="font-mono text-xs text-cyber-600 dark:text-cyber-400 font-semibold">// Distinctions &amp; Merits</span>
+          </div>
           <div class="grid sm:grid-cols-2 gap-3">
-            <div class="flex items-center gap-3 p-3 border border-slate-100 dark:border-white/5 hover:border-cyber-400/30 transition-colors">
-              <span class="font-mono text-[10px] text-cyber-600 dark:text-cyber-400 shrink-0 w-20">HCSE439</span>
-              <span class="text-xs text-slate-600 dark:text-slate-400 flex-1">Network Security &amp; Cryptography</span>
-              <span class="font-mono text-xs font-bold text-slate-800 dark:text-white">3</span>
-            </div>
             <div class="flex items-center gap-3 p-3 border border-slate-100 dark:border-white/5 hover:border-cyber-400/30 transition-colors">
               <span class="font-mono text-[10px] text-cyber-600 dark:text-cyber-400 shrink-0 w-20">HCSCI234</span>
               <span class="text-xs text-slate-600 dark:text-slate-400 flex-1">Research Methods</span>
-              <span class="font-mono text-xs font-bold text-slate-800 dark:text-white">1</span>
+              <span class="font-mono text-xs font-bold text-slate-800 dark:text-white">1 (Distinction)</span>
             </div>
             <div class="flex items-center gap-3 p-3 border border-slate-100 dark:border-white/5 hover:border-cyber-400/30 transition-colors">
               <span class="font-mono text-[10px] text-cyber-600 dark:text-cyber-400 shrink-0 w-20">HCSE433</span>
@@ -721,7 +933,7 @@
             <div class="flex items-center gap-3 p-3 border border-slate-100 dark:border-white/5 hover:border-cyber-400/30 transition-colors">
               <span class="font-mono text-[10px] text-cyber-600 dark:text-cyber-400 shrink-0 w-20">HCSCI433</span>
               <span class="text-xs text-slate-600 dark:text-slate-400 flex-1">Parallel &amp; Distributed Computing</span>
-              <span class="font-mono text-xs font-bold text-slate-800 dark:text-white">1</span>
+              <span class="font-mono text-xs font-bold text-slate-800 dark:text-white">1 (Distinction)</span>
             </div>
             <div class="flex items-center gap-3 p-3 border border-slate-100 dark:border-white/5 hover:border-cyber-400/30 transition-colors">
               <span class="font-mono text-[10px] text-cyber-600 dark:text-cyber-400 shrink-0 w-20">HCSE432</span>
@@ -736,12 +948,12 @@
             <div class="flex items-center gap-3 p-3 border border-slate-100 dark:border-white/5 hover:border-cyber-400/30 transition-colors">
               <span class="font-mono text-[10px] text-cyber-600 dark:text-cyber-400 shrink-0 w-20">HCSCI133</span>
               <span class="text-xs text-slate-600 dark:text-slate-400 flex-1">Operating Systems</span>
-              <span class="font-mono text-xs font-bold text-slate-800 dark:text-white">1</span>
+              <span class="font-mono text-xs font-bold text-slate-800 dark:text-white">1 (Distinction)</span>
             </div>
             <div class="flex items-center gap-3 p-3 border border-slate-100 dark:border-white/5 hover:border-cyber-400/30 transition-colors">
               <span class="font-mono text-[10px] text-cyber-600 dark:text-cyber-400 shrink-0 w-20">HCSE135</span>
               <span class="text-xs text-slate-600 dark:text-slate-400 flex-1">Database Systems</span>
-              <span class="font-mono text-xs font-bold text-slate-800 dark:text-white">1</span>
+              <span class="font-mono text-xs font-bold text-slate-800 dark:text-white">1 (Distinction)</span>
             </div>
             <div class="flex items-center gap-3 p-3 border border-slate-100 dark:border-white/5 hover:border-cyber-400/30 transition-colors">
               <span class="font-mono text-[10px] text-cyber-600 dark:text-cyber-400 shrink-0 w-20">HCSCI439</span>
@@ -749,17 +961,12 @@
               <span class="font-mono text-xs font-bold text-slate-800 dark:text-white">2.1</span>
             </div>
             <div class="flex items-center gap-3 p-3 border border-slate-100 dark:border-white/5 hover:border-cyber-400/30 transition-colors">
-              <span class="font-mono text-[10px] text-cyber-600 dark:text-cyber-400 shrink-0 w-20">HCSE438</span>
-              <span class="text-xs text-slate-600 dark:text-slate-400 flex-1">Research Project</span>
-              <span class="font-mono text-xs font-bold text-slate-800 dark:text-white">3</span>
-            </div>
-            <div class="flex items-center gap-3 p-3 border border-slate-100 dark:border-white/5 hover:border-cyber-400/30 transition-colors">
               <span class="font-mono text-[10px] text-cyber-600 dark:text-cyber-400 shrink-0 w-20">HCSE436</span>
               <span class="text-xs text-slate-600 dark:text-slate-400 flex-1">Control Systems Engineering</span>
               <span class="font-mono text-xs font-bold text-slate-800 dark:text-white">2.1</span>
             </div>
           </div>
-          <p class="font-mono text-xs text-slate-400 mt-4">* Grade scale: 1 = Distinction, 2.1 = Merit, 3 = Pass</p>
+          <p class="font-mono text-xs text-slate-400 mt-4">* Grade scale: 1 = Distinction, 2.1 = Merit (Upper Second Class)</p>
         </div>
       </div>
     </div>
@@ -768,46 +975,60 @@
   <!-- CONTACT -->
   <section id="contact" class="py-28 bg-white dark:bg-black border-t border-slate-100 dark:border-white/5">
     <div class="max-w-4xl mx-auto px-6 text-center">
-      <p class="font-mono text-xs text-cyber-600 dark:text-cyber-400 tracking-widest uppercase mb-4">// Let's Connect</p>
-      <h2 class="font-display font-bold text-4xl md:text-6xl tracking-tighter mb-4">
-        Open to<br/><span class="text-cyber-600 dark:text-cyber-400">Opportunities</span>
-      </h2>
-      <div class="h-[2px] w-16 bg-cyber-500 mx-auto mb-8"></div>
-      <p class="text-slate-600 dark:text-slate-400 max-w-lg mx-auto mb-12 leading-relaxed">
-        I'm actively seeking entry-level SOC Analyst roles, cybersecurity internships, and graduate opportunities. If you're looking for a motivated, certified security professional from Zimbabwe — let's talk.
-      </p>
+      <div class="reveal-on-scroll">
+        <p class="font-mono text-xs text-cyber-600 dark:text-cyber-400 tracking-widest uppercase mb-4">// Get In Touch</p>
+        <h2 class="font-display font-bold text-4xl md:text-6xl tracking-tighter mb-4">
+          Ready to Defend &amp;<br/><span class="text-cyber-600 dark:text-cyber-400">Open to Roles</span>
+        </h2>
+        <div class="h-[2px] w-16 bg-cyber-500 mx-auto mb-8"></div>
+        <p class="text-slate-600 dark:text-slate-400 max-w-xl mx-auto mb-10 leading-relaxed text-base">
+          Actively seeking Junior / Tier-1 SOC Analyst positions, security operations roles, and cybersecurity graduate opportunities. Available for remote roles globally or on-site relocation.
+        </p>
 
-      <div class="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mb-12">
-        <a href="mailto:mvmagombo@gmail.com" class="inline-flex items-center gap-2 px-7 py-3.5 bg-cyber-600 dark:bg-cyber-500 text-white font-bold uppercase tracking-widest text-xs hover:bg-cyber-700 dark:hover:bg-cyber-400 transition-colors">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-          <span>Email Me (mvmagombo@gmail.com)</span>
-        </a>
-        <a href="https://linkedin.com/in/matthew-magombo-21a7141ab/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-7 py-3.5 border border-slate-300 dark:border-cyber-500/40 text-slate-700 dark:text-cyber-400 font-bold uppercase tracking-widest text-xs hover:bg-slate-50 dark:hover:bg-cyber-900/20 transition-colors">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-          <span>LinkedIn</span>
-        </a>
-        <a href="https://github.com/VonMagombo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-7 py-3.5 border border-slate-300 dark:border-cyber-500/40 text-slate-700 dark:text-cyber-400 font-bold uppercase tracking-widest text-xs hover:bg-slate-50 dark:hover:bg-cyber-900/20 transition-colors">
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          <span>GitHub</span>
-        </a>
-      </div>
-
-      <!-- Terminal card -->
-      <div class="inline-block text-left p-6 bg-slate-900 dark:bg-black border border-cyber-500/30 font-mono text-sm max-w-xl w-full">
-        <div class="flex gap-1.5 mb-4">
-          <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
-          <span class="w-2.5 h-2.5 rounded-full bg-yellow-500"></span>
-          <span class="w-2.5 h-2.5 rounded-full bg-green-500"></span>
+        <!-- Action CTAs -->
+        <div class="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mb-12">
+          <a href="mailto:mvmagombo@gmail.com" class="inline-flex items-center gap-2 px-6 py-3.5 bg-cyber-600 dark:bg-cyber-500 text-white font-bold uppercase tracking-widest text-xs hover:bg-cyber-700 dark:hover:bg-cyber-400 transition-colors shadow-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <span>Email Me</span>
+          </a>
+          <button data-copy="mvmagombo@gmail.com" class="inline-flex items-center gap-2 px-5 py-3.5 border border-slate-300 dark:border-white/15 text-slate-700 dark:text-slate-300 font-bold uppercase tracking-widest text-xs hover:bg-slate-50 dark:hover:bg-white/5 transition-colors" title="Copy email to clipboard">
+            <svg class="w-4 h-4 text-cyber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
+            <span class="copy-label">Copy Email</span>
+          </button>
+          <a href="assets/Matthew_Vonroy_Magombo_CV.pdf" download="Matthew_Vonroy_Magombo_CV.pdf" class="inline-flex items-center gap-2 px-6 py-3.5 border border-cyber-500/50 text-cyber-700 dark:text-cyber-400 font-bold uppercase tracking-widest text-xs hover:bg-cyber-50 dark:hover:bg-cyber-900/20 transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            <span>Download CV (PDF)</span>
+          </a>
+          <a href="https://www.linkedin.com/in/matthew-v-magombo/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3.5 border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-300 font-bold uppercase tracking-widest text-xs hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/VonMagombo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3.5 border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-300 font-bold uppercase tracking-widest text-xs hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <span>GitHub</span>
+          </a>
         </div>
-        <p class="text-slate-500 text-xs mb-1">$ whoami</p>
-        <p class="text-white text-xs mb-3">matthew_vonroy_magombo</p>
-        <p class="text-slate-500 text-xs mb-1">$ cat status.txt</p>
-        <p class="text-cyber-400 text-xs mb-3">AVAILABLE · HARARE (CAT / GMT+2) · OPEN TO REMOTE &amp; RELOCATION</p>
-        <p class="text-slate-500 text-xs mb-1">$ cat contacts.json</p>
-        <p class="text-green-400 text-xs mb-3">{ "email": "mvmagombo@gmail.com", "github": "VonMagombo", "linkedin": "matthew-magombo-21a7141ab" }</p>
-        <p class="text-slate-500 text-xs mb-1">$ cat focus.txt</p>
-        <p class="text-teal-300 text-xs mb-3">SIEM Automation · Threat Detection · Incident Response · EDR · PCAP Forensics</p>
-        <p class="text-slate-500 text-xs">$ <span class="text-white animate-blink">|</span></p>
+
+        <!-- Terminal card -->
+        <div class="inline-block text-left p-6 bg-slate-900 dark:bg-black border border-cyber-500/30 font-mono text-sm max-w-xl w-full shadow-lg">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-yellow-500"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-green-500"></span>
+            </div>
+            <span class="text-[11px] text-slate-500 font-mono">soc_analyst@harare-node:~</span>
+          </div>
+          <p class="text-slate-500 text-xs mb-1">$ whoami</p>
+          <p class="text-white text-xs mb-3">matthew_vonroy_magombo</p>
+          <p class="text-slate-500 text-xs mb-1">$ cat status.txt</p>
+          <p class="text-cyber-400 text-xs mb-3">AVAILABLE · HARARE (CAT / GMT+2) · OPEN TO REMOTE &amp; RELOCATION</p>
+          <p class="text-slate-500 text-xs mb-1">$ cat contacts.json</p>
+          <p class="text-green-400 text-xs mb-3">{ "email": "mvmagombo@gmail.com", "github": "VonMagombo", "linkedin": "matthew-v-magombo" }</p>
+          <p class="text-slate-500 text-xs mb-1">$ cat focus.txt</p>
+          <p class="text-teal-300 text-xs mb-3">Threat Detection · SIEM Correlation · EDR Monitoring · Incident Triage · Security Scripting</p>
+          <p class="text-slate-500 text-xs">$ <span class="text-white animate-blink">|</span></p>
+        </div>
       </div>
     </div>
   </section>
@@ -815,11 +1036,11 @@
   <!-- FOOTER -->
   <footer class="py-8 border-t border-slate-100 dark:border-white/5 bg-white dark:bg-black">
     <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p class="font-mono text-xs text-slate-400">© 2026 Matthew Vonroy Magombo</p>
-      <p class="font-mono text-xs text-slate-400">BSc Computer Systems Engineering · Google Certified · ALX Certified</p>
-      <div class="flex items-center gap-1 font-mono text-xs text-slate-400">
+      <p class="font-mono text-xs text-slate-400">© 2026 Matthew Vonroy Magombo · All rights reserved</p>
+      <p class="font-mono text-xs text-slate-400">BSc Hons Computer Systems Engineering · Google Cybersecurity · ALX Africa · LF Cloud Native</p>
+      <div class="flex items-center gap-1.5 font-mono text-xs text-slate-400">
         <span class="w-1.5 h-1.5 rounded-full bg-cyber-500 animate-pulse"></span>
-        <span>Available for SOC roles</span>
+        <span class="text-cyber-600 dark:text-cyber-400 font-medium">Ready for SOC Opportunities</span>
       </div>
     </div>
   </footer>
