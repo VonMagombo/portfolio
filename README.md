@@ -10,8 +10,8 @@
 [![Status](https://img.shields.io/badge/Status-Open%20to%20Opportunities-success?style=for-the-badge)](mailto:mvmagombo@gmail.com)
 
 <p align="center">
-  <b>BSc (Hons) Information Technology (Upper Second Class 2.1)</b><br>
-  <i>Certified in Kubernetes & Cloud Native Essentials (LFS250) · Oracle Cloud Infrastructure 2025 AI Foundations</i>
+  <b>BSc (Hons) Computer Systems Engineering (Upper Second Class 2.1)</b><br>
+  <i>Midlands State University · Certified in Kubernetes (LFS250) · OCI 2025 AI Foundations</i>
 </p>
 
 ---
@@ -126,7 +126,7 @@ http://localhost:8080
 
 This portfolio is structured in alignment with industry-standard tech career recommendations and **OctoPrep.ai** guidelines:
 1. **Verifiable Impact**: All work experience entries quantify real systems impact (e.g., enterprise database uptime, high-volume query throughput, user incident triage).
-2. **Clean Information Hierarchy**: Education highlights top academic distinctions (10 Merits & Distinctions from Chinhoyi University of Technology) while omitting unhelpful coursework noise.
+2. **Clean Information Hierarchy**: Education highlights top academic distinctions (10 Merits & Distinctions from Midlands State University) while omitting unhelpful coursework noise.
 3. **Unified Identity**: Single point of contact across GitHub ([@VonMagombo](https://github.com/VonMagombo)), LinkedIn ([in/matthew-v-magombo](https://www.linkedin.com/in/matthew-v-magombo/)), and direct email.
 
 ---
@@ -135,7 +135,7 @@ This portfolio is structured in alignment with industry-standard tech career rec
 
 | Credential / Role | Issuing Body / Organization | Key Details |
 | :--- | :--- | :--- |
-| **BSc (Hons) Information Technology** | Chinhoyi University of Technology | Upper Second Class (2.1) · 10 Merits & Distinctions |
+| **BSc (Hons) Computer Systems Engineering** | Midlands State University | Upper Second Class (2.1) · 10 Merits & Distinctions |
 | **Kubernetes & Cloud Native Essentials (LFS250)** | The Linux Foundation | Verification ID: `LF-4nx7w75zcm` |
 | **Oracle Cloud Infrastructure 2025 AI Foundations** | Oracle University | Associate Level Certification |
 | **IT Intern (Enterprise Systems)** | Central Vehicle Registry (CVR) | Database administration, LAN infrastructure, system diagnostics |
